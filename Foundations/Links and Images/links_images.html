@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Links and Images</title>
+    </head>
+
+
+    <body>
+        <h1>Homepage</h1>
+
+        <a>This is an anchor without a link, it doesn't do nothing</a>
+        <br>
+        <br>
+        <a href="https://www.theodinproject.com/about">
+            This is an anchor with a hypertext reference (href) attribute containing the target link
+        </a>
+        <br>
+        <br>
+        <a href="https://www.theodinproject.com/about" target="_blank" rel="noopener noreferrer">
+            This is the same anchor as before but with the attribute target with the value _blank, 
+            which opens the link in a new tab. Also has the rel attribute with the values noopener noreferrer, 
+            which is a security measure to prevent the new tab from accessing the original tab (noopener) and
+            prevent the new tab from knowing the source page that has the link to it
+        </a>
+        <br>
+        <br>
+        <a href="links_images2.html">
+            The href attribute of this anchor has a relative link to another HTML page
+            in the same folder
+        </a>
+        <br>
+        <br>
+        <a href="./pages/links_images3.html">
+            The href attribute of this anchor has a relative link to another HTML page
+            in the folder pages
+        </a>
+        <br>
+        <br>
+        <p>
+            Below is an img tag with the src attribute containing the link to an image.
+            The img tag doesn't need a closing tag, it's a self-closing tag.
+        </p>
+        <img src="https://www.theodinproject.com/mstile-310x310.png">
+        <p>
+            Below is an img tag with the src attribute containing the relative link
+            to an image in the same folder.
+            It also has an alt attribute with a text that will be displayed if the image
+            doesn't load, it is also used by screen readers to describe the image to visually
+            impaired people.
+        </p>
+        <img src="./car.jpg" alt="Cute kitty">
+        <p>
+        Below is an img tag with image size attributes (height and width) to resize the image.
+        It helps the browser to layout the page without jumping and flashing.
+        </p>
+        <img src="https://www.theodinproject.com/mstile-310x310.png" alt="The Odin Project Logo" height="310" width="310">
+    </body>
+    
+</html>
